@@ -6,8 +6,24 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --bg-blue-gradient-start: #084887;
+  --bg-blue-gradient-end: #118ab5;
+  --bg-yellow-gradient-start: #f9ab55;
+  --bg-yellow-gradient-end: #f58a07;
+  --gradient-blue: 129deg, var(--bg-blue-gradient-start) 0%,
+    var(--bg-blue-gradient-end) 100%;
+  --gradient-yellow: 315deg, var(--bg-yellow-gradient-start) 0%,
+    var(--bg-yellow-gradient-end) 100%;
 }
 
+@layer components {
+  .btn-primary {
+    @apply py-2 px-8 items-center w-auto flex-col flex bg-sandy-brown hover:bg-tangerine text-black rounded-lg text-center font-bold font-sans transition;
+  }
+  .btn-secondary {
+    @apply py-2 px-8 items-center w-auto flex-col flex bg-polynesian-blue hover:bg-cool-gray text-ghost-white hover:text-polynesian-blue rounded-lg text-center font-bold font-sans transition;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,10 +34,4 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
