@@ -1,13 +1,14 @@
-import Hero from "../molecules/Hero";
-import Navbar from "../molecules/Navbar";
+import { Hero, Navbar } from "@/components/molecules";
 
-export default function Header() {
+function Header() {
   return (
     <header className="bg-gradient-blue flex justify-center w-full">
       <div className="container">
         <Navbar />
-        <Hero/>
+        <Hero />
       </div>
     </header>
   );
 }
+
+export default Header;

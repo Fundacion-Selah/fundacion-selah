@@ -1,8 +1,8 @@
+import { Button } from "@/components/atoms";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../atoms/Button";
 
-export default function Navbar() {
+function Navbar() {
   return (
     <nav className="flex justify-between items-center mt-6">
       <Link href="/">
@@ -37,3 +37,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;

@@ -1,5 +1,4 @@
-import Footer from "@/components/molecules/Footer";
-import Header from "@/components/organisms/Header";
+import { Footer, Header } from "@/components/organisms";
 import type { Metadata } from "next";
 import { roboto, source_serif } from "./fonts";
 import "./globals.css";
@@ -21,7 +20,7 @@ export default function RootLayout({
       >
         <Header />
         <div className="container">{children}</div>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-gradient-blue w-full flex items-center justify-center p-8">
       <div className="container text-center">
@@ -14,11 +14,11 @@ export default function Footer() {
               className="flex gap-2 justify-end"
             >
               <Image
-                className="inline-block "
                 src="/icons/icon-instagram.svg"
                 alt="instagram"
                 width={20}
                 height={20}
+                className="inline-block w-auto h-auto"
               />
               @selah.fundacion
             </Link>
@@ -34,7 +34,7 @@ export default function Footer() {
                 alt="WhatsApp"
                 width={20}
                 height={20}
-                className="inline-block"
+                className="inline-block w-auto h-auto"
               />
               +57 3103715377
             </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
                 alt="email"
                 width={20}
                 height={20}
-                className="inline-block"
+                className="inline-block w-auto h-auto"
               />
               somosfundacionselah@gmail.com
             </Link>
@@ -61,3 +61,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

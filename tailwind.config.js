@@ -20,6 +20,7 @@ module.exports = {
         "gradient-yellow": "linear-gradient(var(--gradient-yellow))",
         "gradient-blue": "linear-gradient(var(--gradient-blue))",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-black": "linear-gradient(var(--gradient-black))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
