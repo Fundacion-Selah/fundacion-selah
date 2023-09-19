@@ -13,6 +13,7 @@ module.exports = {
         "sandy-brown": "#F9AB55",
         "ghost-white": "#F7F5FB",
         "polynesian-blue": "#084887",
+        "polynesian-blue-30": "rgba(8, 72, 135, 0.3)",
         "cool-gray": "#909CC2",
         "original-blue": "#118AB5",
       },

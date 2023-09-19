@@ -16,7 +16,7 @@ const BannerItem = ({
   return (
     <li className={`banner__item`} style={{ backgroundImage: `url(${image})` }}>
       <Link href={`/${link}`} className="w-full banner__link">
-        <div className="banner__info">
+        <div className="banner__info text-ghost-white">
           <h1 className="info__title font-serif text-4xl font-bold mb-1">
             {title}
           </h1>

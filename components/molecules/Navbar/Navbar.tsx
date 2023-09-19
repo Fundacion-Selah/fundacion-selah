@@ -16,17 +16,17 @@ function Navbar() {
 
       <ul className="flex items-center gap-4">
         <li>
-          <Link className="hover:underline py-2 px-4 font-sans" href="/#proyectos">
+          <Link className="hover:underline py-2 px-4 font-sans text-ghost-white" href="/#proyectos">
             Proyectos
           </Link>
         </li>
         <li>
-          <Link className="hover:underline py-2 px-4 font-sans" href="/#vincularme">
+          <Link className="hover:underline py-2 px-4 font-sans text-ghost-white" href="/#vincularme">
             Vincularme
           </Link>
         </li>
         <li>
-          <Link className="hover:underline py-2 px-4 font-sans" href="/#contacto">
+          <Link className="hover:underline py-2 px-4 font-sans text-ghost-white" href="/#contacto">
             Contacto
           </Link>
         </li>

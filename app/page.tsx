@@ -1,12 +1,11 @@
-import Link from "next/link";
+import { VideoBanner } from "@/components/molecules";
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-center p-24">
+    <main className="flex h-screen flex-col items-center justify-center ">
       <div className="content">
-        <p className="text-center pt-12">¿Y si convertimos la bondad en una actitud y no en una excepción?</p>
-        <Link className="text-center block underline pt-12" href="/reportes-dian">Reportes DIAN</Link>
-        <p className="text-center pt-12">🚧 Sitio en construcción 🚧</p>
+        <VideoBanner />
+        <h2 id="proyectos" className="text-center text-5xl font-bold pt-12 font-serif">Proyectos</h2>
       </div>
     </main>
   );

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-blue w-full flex items-center justify-center p-8">
+    <footer className="bg-gradient-blue w-full flex items-center justify-center p-8 text-ghost-white">
       <div className="container text-center">
-        <h3 className="font-serif font-bold text-3xl">Contacto</h3>
+        <h3 className="font-serif font-bold text-3xl" id="contacto">Contacto</h3>
         <ul className="flex justify-center gap-4 pt-4">
           <li>
             <Link
