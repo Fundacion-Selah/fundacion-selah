@@ -37,6 +37,10 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hero,
 .internalBanner {
   margin: 1.5rem 0 0;

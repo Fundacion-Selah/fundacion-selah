@@ -1,4 +1,5 @@
 import { ProjectItem, VideoBanner } from "@/components/molecules";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -91,6 +92,32 @@ export default function Home() {
               }
             }}
           />
+        </section>
+        <section className="p-12 bg-gradient-yellow rounded-[2rem] text-center" id="vincularme">
+          <h2 className="font-serif font-bold text-5xl pb-16 w-4/5 mx-auto">¿Cómo puedes vincularte a nuestros proyectos?</h2>
+          <ul className="flex flex-col gap-10 justify-center items-center">
+            <li className="flex gap-8 items-center w-4/5">
+              <Image src="/icons/icon-volunteer.svg" alt="Voluntario" width={80} height={80}/>
+              <span className="text-2xl text-left">Como voluntario y apoyar uno de nuestros proyectos bien sea desde el servicio o con tu profesión.</span>
+            </li>
+            <li className="flex gap-8 items-center w-4/5">
+              <Image src="/icons/icon-gifts.svg" alt="Aportes en especie" width={80} height={80}/>
+              <span className="text-2xl text-left">Aporte en especie (mercado, ropa, implementos de aseo, medicina)</span>
+            </li>
+            <li className="flex gap-8 items-center w-4/5">
+              <Image src="/icons/icon-donation.svg" alt="Aporte en dinero" width={80} height={80}/>
+              <span className="text-2xl text-left">Aporte en dinero como empresa o persona natural – según el proyecto que te llame la atención – te mostramos el presupuesto para el desarrollo del mismo.</span>
+            </li>
+            <li className="flex gap-8 items-center w-4/5">
+              <Image src="/icons/icon-sponsor.svg" alt="Apadrinando" width={80} height={80}/>
+              <span className="text-2xl text-left">Apadrinando de manera mensual y con un aporte desde $55.000 uno de los proyectos SELAH.</span>
+            </li>
+            <li className="flex gap-8 items-center w-4/5">
+              <Image src="/icons/icon-share.svg" alt="Conectarnos" width={80} height={80}/>
+              <span className="text-2xl text-left">Conectarnos con posibles padrinos o empresas que deseen ser parte de SELAH.</span>
+            </li>
+          </ul>
+          <p className="font-bold text-2xl py-8 w-1/2 text-center mx-auto">Recuerda que podemos expedir un certificado de donación descontable para la declaración de renta.</p>
         </section>
       </div>
     </main>
