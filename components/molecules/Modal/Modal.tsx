@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/atoms";
-import { createPortal } from "react-dom";
+import { useEffect } from "react";
+import { ReactPortal } from "..";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -9,21 +10,38 @@ interface ModalProps {
 }
 
 function Modal({ children, isOpen, closeModal }: ModalProps) {
+  // close modal on esc key
+  useEffect(() => {
+    const closeOnEscKey = (e: KeyboardEvent) =>
+      e.key === "Escape" ? closeModal() : null;
+    document.body.addEventListener("keydown", closeOnEscKey);
+
+    return () => {
+      document.body.removeEventListener("keydown", closeOnEscKey);
+    };
+  }, [closeModal]);
+
+  // prevent scroll on modal is open
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
+
+  if (!isOpen) return null;
+
   return (
-    <>
-      {isOpen &&
-        createPortal(
-          <>
-            <div className="modal fixed top-0 left-0 w-screen h-screen z-40 bg-neutral-800 opacity-50"></div>
-            <div className="fixed rounded flex flex-col min-w-fit overflow-hidden p-5 bg-zinc-800 inset-y-32 inset-x-12 z-50">
-              <h2>Modal</h2>
-              <Button onClick={closeModal}>Close</Button>
-              {children}
-            </div>{" "}
-          </>,
-          document.body
-        )}
-    </>
+    <ReactPortal>
+      <div className="fixed top-0 left-0 w-screen h-screen z-40 bg-neutral-800 opacity-50"></div>
+      <div className="fixed rounded-[1rem] grid grid-cols-1 grid-rows-[1fr_3.5rem] overflow-hidden bg-gradient-blue inset-y-12 inset-x-12 z-50 place-items-center">
+        <div className="modal__content">{children}</div>
+        <div className="modal__actions ">
+          <Button primary onClick={closeModal}>Cerrar</Button>
+        </div>
+      </div>{" "}
+    </ReactPortal>
   );
 }
 
