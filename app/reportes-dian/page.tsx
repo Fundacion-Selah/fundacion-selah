@@ -1,14 +1,9 @@
-import Link from "next/link";
-
 export default function ReportesDian() {
   return (
-    <main className="flex h-screen flex-col items-center justify-center p-24">
+    <main className="py-32">
       <div className="content">
-        <h1 className="text-center text-3xl font-bold underline">
-          <Link href="/">Fundación Selah</Link>
-        </h1>
-        <h2 className="text-center text-2xl font-bold pt-12">Reportes DIAN</h2>
-        <ol className="list-decimal">
+        <h1 className="text-5xl font-bold pb-12 font-serif">Reportes Dian</h1>
+        <ol className="list-decimal list-inside font-bold">
           <li>
             <a
               className="hover:underline"
