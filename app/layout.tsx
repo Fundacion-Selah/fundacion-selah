@@ -6,6 +6,20 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fundación Selah",
   description: "Fundación Selah",
+  openGraph: {
+    title: "Fundación Selah",
+    description: "Fundación Selah",
+    url: "https://fundacionselah.org",
+    images: [
+      {
+        url: "https://fundacionselah.org/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Fundación Selah"
+      }
+    ],
+    type: "website",
+  }
 };
 
 export default function RootLayout({
