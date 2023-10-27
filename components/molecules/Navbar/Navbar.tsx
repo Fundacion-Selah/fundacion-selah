@@ -8,8 +8,8 @@ import { Modal } from "../Modal";
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
   return (
-    <nav className="flex justify-between items-center mt-6">
-      <Link href="/">
+    <nav className="flex flex-wrap justify-center lg:justify-between items-center mt-6 ">
+      <Link href="/" className="mb-4 lg:mb-0">
         <Image
           src="/selah-logo.svg"
           alt="Fundación Selah"
@@ -18,7 +18,7 @@ function Navbar() {
         />
       </Link>
 
-      <ul className="flex items-center gap-4">
+      <ul className="flex flex-wrap justify-center lg:justify-normal items-center gap-4">
         <li>
           <Link
             className="hover:underline py-2 px-4 font-sans text-ghost-white"

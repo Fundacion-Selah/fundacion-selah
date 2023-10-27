@@ -1,6 +1,6 @@
 export default function ReportesDian() {
   return (
-    <main className="py-32">
+    <main className="py-32 px-4 lg:px-0">
       <div className="content">
         <h1 className="text-5xl font-bold pb-12 font-serif">Reportes Dian</h1>
         <ol className="list-decimal list-inside font-bold">
