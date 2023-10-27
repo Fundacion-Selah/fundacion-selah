@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gradient-blue w-full flex items-center justify-center p-8 text-ghost-white">
       <div className="container text-center">
         <h3 className="font-serif font-bold text-3xl" id="contacto">Contacto</h3>
-        <ul className="flex justify-center gap-4 pt-4">
+        <ul className="flex flex-wrap lg:flex-nowrap justify-center gap-4 pt-4">
           <li>
             <Link
               href="https://www.instagram.com/selah.fundacion/"
