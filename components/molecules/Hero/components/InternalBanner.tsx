@@ -4,7 +4,7 @@ import Image from "next/image";
 const InternalBanner = () => {
   return (
     <section className="internalBanner">
-      <Image src={internalBanner} alt="Imagen sección Dian" />
+      <Image src={internalBanner} alt="Imagen sección Dian" className="w-full" />
     </section>
   );
 };
