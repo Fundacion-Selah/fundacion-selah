@@ -30,7 +30,7 @@ function VideoBanner() {
             ¿Y si convertimos la bondad en una actitud y no en una excepción?
           </h2>
           <Button onClick={handleButtonClick}>
-            Conoce como te puedes vincular
+            Conoce cómo te puedes vincular
           </Button>
         </div>
         <div className="videoBanner__player">
