@@ -1,0 +1,12 @@
+{
+  "conventionalCommits.scopes": [
+    "styles",
+    "typo",
+    "home",
+    "components",
+    "pages",
+    "dependencies",
+    "config",
+    "ci/cd"
+  ]
+}
