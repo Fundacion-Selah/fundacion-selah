@@ -27,19 +27,6 @@ export default function Home() {
             }}
           />
           <ProjectItem
-            title="Héroes del barrio"
-            image="/hero/img-heroes-barrio.png"
-            id="heroes"
-            description={{
-              propose:
-                "Aventura grupal pensada para crear oportunidades de servicio social, liderada por los mismos niños, niñas y adolescentes. Ellos ahora serán los protagonistas del cambio en sus casas, cuadras, esquinas y barrios. Queremos que descubran cómo pueden poner sus dones y talentos al servicio de los demás. Así que soñamos con experiencias misioneras, jornadas de aseo, intervenciones artísticas, murales y torneos deportivos en los lugares más necesitados de la comunidad, empezando por sus propias viviendas.",
-              problem:
-                "niños y adolescentes que hoy no tienen los mejores referentes para invertir el tiempo, trabajar en su propósito y proyecto de vida, ya que están expuestos al consumo de drogas y delincuencia común.",
-              place: "San Javier – Comuna 13 (Medellín – Colombia)",
-            }}
-          />
-          <ProjectItem
-            odd
             title="Talleres creativos"
             image="/hero/img-talleres.png"
             id="talleres"
@@ -61,6 +48,7 @@ export default function Home() {
             }}
           />
           <ProjectItem
+            odd
             title="El Rey te mandó a llamar"
             image="/hero/img-el-rey-llama.png"
             id="rey"
@@ -74,7 +62,6 @@ export default function Home() {
             }}
           />
           <ProjectItem
-            odd
             title="Plan lector"
             image="/hero/img-plan-lector.png"
             id="lector"
@@ -83,41 +70,89 @@ export default function Home() {
                 "El plan lector es un programa que consiste en proponer un libro para que los estudiantes lo lean en la jornada académica y presenten sus reflexiones con respecto al mismo, promoviendo así el hábito de la lectura y el análisis crítico de los textos.",
               problem:
                 "Hoy en día los jóvenes no tienen un hábito por la lectura que les añada valores y principios de vida ni desarrollar un sentido crítico y coherente a la hora de encaminar su propósito de vida!",
-              place:
-                "Colegios del País (Colombia)",
+              place: "Colegios del País (Colombia)",
               book: "Celda 212",
               other: {
                 title: "Un foro con el autor",
-                content: "Una vez que un grupo de estudiantes ha leído la obra, podrá tener la oportunidad de conocer al autor del libro y compartir una sesión de preguntas y respuestas que enriquecerá en gran manera su formación académica."
-              }
+                content:
+                  "Una vez que un grupo de estudiantes ha leído la obra, podrá tener la oportunidad de conocer al autor del libro y compartir una sesión de preguntas y respuestas que enriquecerá en gran manera su formación académica.",
+              },
             }}
           />
         </section>
-        <section className="p-12 bg-gradient-yellow rounded-[2rem] text-center" id="vincularme">
-          <h2 className="font-serif font-bold text-2xl lg:text-5xl pb-16 w-4/5 mx-auto">¿Cómo puedes vincularte a nuestros proyectos?</h2>
+        <section
+          className="p-12 bg-gradient-yellow rounded-[2rem] text-center"
+          id="vincularme"
+        >
+          <h2 className="font-serif font-bold text-2xl lg:text-5xl pb-16 w-4/5 mx-auto">
+            ¿Cómo puedes vincularte a nuestros proyectos?
+          </h2>
           <ul className="flex flex-col gap-10 justify-center items-center">
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-volunteer.svg" alt="Voluntario" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Como voluntario y apoyar uno de nuestros proyectos bien sea desde el servicio o con tu profesión.</span>
+              <Image
+                src="/icons/icon-volunteer.svg"
+                alt="Voluntario"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Como voluntario y apoyar uno de nuestros proyectos bien sea
+                desde el servicio o con tu profesión.
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-gifts.svg" alt="Aportes en especie" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Aporte en especie (mercado, ropa, implementos de aseo, medicina)</span>
+              <Image
+                src="/icons/icon-gifts.svg"
+                alt="Aportes en especie"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Aporte en especie (mercado, ropa, implementos de aseo, medicina)
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-donation.svg" alt="Aporte en dinero" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Aporte en dinero como empresa o persona natural – según el proyecto que te llame la atención – te mostramos el presupuesto para el desarrollo del mismo.</span>
+              <Image
+                src="/icons/icon-donation.svg"
+                alt="Aporte en dinero"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Aporte en dinero como empresa o persona natural – según el
+                proyecto que te llame la atención – te mostramos el presupuesto
+                para el desarrollo del mismo.
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-sponsor.svg" alt="Apadrinando" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Apadrinando de manera mensual y con un aporte desde $55.000 uno de los proyectos SELAH.</span>
+              <Image
+                src="/icons/icon-sponsor.svg"
+                alt="Apadrinando"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Apadrinando de manera mensual y con un aporte desde $55.000 uno
+                de los proyectos SELAH.
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-share.svg" alt="Conectarnos" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Conectarnos con posibles padrinos o empresas que deseen ser parte de SELAH.</span>
+              <Image
+                src="/icons/icon-share.svg"
+                alt="Conectarnos"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Conectarnos con posibles padrinos o empresas que deseen ser
+                parte de SELAH.
+              </span>
             </li>
           </ul>
-          <p className="font-bold text-2xl py-8 w-auto lg:w-1/2 text-center mx-auto">Recuerda que podemos expedir un certificado de donación descontable para la declaración de renta.</p>
+          <p className="font-bold text-2xl py-8 w-auto lg:w-1/2 text-center mx-auto">
+            Recuerda que podemos expedir un certificado de donación descontable
+            para la declaración de renta.
+          </p>
         </section>
       </div>
     </main>
