@@ -27,19 +27,6 @@ export default function Home() {
             }}
           />
           <ProjectItem
-            title="Héroes del barrio"
-            image="/hero/img-heroes-barrio.png"
-            id="heroes"
-            description={{
-              propose:
-                "Aventura grupal pensada para crear oportunidades de servicio social, liderada por los mismos niños, niñas y adolescentes. Ellos ahora serán los protagonistas del cambio en sus casas, cuadras, esquinas y barrios. Queremos que descubran cómo pueden poner sus dones y talentos al servicio de los demás. Así que soñamos con experiencias misioneras, jornadas de aseo, intervenciones artísticas, murales y torneos deportivos en los lugares más necesitados de la comunidad, empezando por sus propias viviendas.",
-              problem:
-                "niños y adolescentes que hoy no tienen los mejores referentes para invertir el tiempo, trabajar en su propósito y proyecto de vida, ya que están expuestos al consumo de drogas y delincuencia común.",
-              place: "San Javier – Comuna 13 (Medellín – Colombia)",
-            }}
-          />
-          <ProjectItem
-            odd
             title="Talleres creativos"
             image="/hero/img-talleres.png"
             id="talleres"
@@ -61,6 +48,7 @@ export default function Home() {
             }}
           />
           <ProjectItem
+            odd
             title="El Rey te mandó a llamar"
             image="/hero/img-el-rey-llama.png"
             id="rey"
@@ -74,7 +62,6 @@ export default function Home() {
             }}
           />
           <ProjectItem
-            odd
             title="Plan lector"
             image="/hero/img-plan-lector.png"
             id="lector"
