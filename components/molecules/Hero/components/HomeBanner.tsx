@@ -11,12 +11,6 @@ const HomeBanner = () => {
           link="/#comedor"
         />
         <BannerItem
-          image="/hero/img-heroes-barrio.png"
-          title="Héroes del barrio"
-          description="Aventura grupal pensada para crear oportunidades de servicio social, liderada por los mismos niños, niñas y adolescentes."
-          link="/#heroes"
-        />
-        <BannerItem
           image="/hero/img-talleres.png"
           title="Talleres creativos"
           description="Ayudar a desarrollar en las mujeres de sectores vulnerables, la capacidad creativa, permitiendo que expresen su potencial creador."
