@@ -58,6 +58,12 @@ function Navbar() {
             <p className="font-bold">Fundación Selah</p>
             <p><span className="font-bold">Nit: </span>901692224</p>
             <p><span className="font-bold">Cuenta de ahorros: </span>0241000358</p>
+            <h3 className="font-serif font-bold text-2xl my-8">
+              o también puedes hacerlo por medio de PayPal:
+            </h3>
+            <div className="flex justify-center">
+              <Button primary onClick={() => window.open('https://paypal.me/selahfundacion?country.x=CO&locale.x=es_XC', '_blank')} >Donar</Button>
+            </div>
           </div>
         </Modal>
       ) : null}
