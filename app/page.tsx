@@ -1,4 +1,4 @@
-import { ProjectItem, VideoBanner } from "@/components/molecules";
+import { ProjectItem } from "@/components/molecules";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,15 +14,15 @@ export default function Home() {
         <section className="proyectos">
           <ProjectItem
             odd
-            title="Comedor para niños y abuelitos"
+            title="Comedor para niños"
             image="/hero/img-comedor-ninos.png"
             id="comedor"
             description={{
               propose:
-                "Atender 100 niños y 50 abuelitos para proveerles almuerzo de lunes a viernes.",
+                "Apoyar comedores que actualmente atienden niños de escasos recursos brindándoles alimentación y enseñanza espiritual.",
               problem:
-                "Es una vereda que presenta gran asentamiento, gran cantidad de personas desplazadas. Por lo tanto, se evidencia el desempleo, el hambre y las familias muy numerosas que no tienen como subsistir.",
-              place: "Bello, El Pinar (Antioquia – Colombia)",
+                "Población desplazada, abandono y descuido por los padres en extrema pobreza.",
+              place: "Sectores vulnerables del la ciudad de Medellín.",
             }}
           />
           <ProjectItem
