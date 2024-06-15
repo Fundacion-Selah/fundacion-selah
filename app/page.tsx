@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <main className="py-32 px-4 lg:px-0">
       <div className="content">
-        <VideoBanner />
         <h2
           id="proyectos"
           className="text-center text-5xl font-bold pt-12 font-serif"
@@ -70,41 +69,89 @@ export default function Home() {
                 "El plan lector es un programa que consiste en proponer un libro para que los estudiantes lo lean en la jornada académica y presenten sus reflexiones con respecto al mismo, promoviendo así el hábito de la lectura y el análisis crítico de los textos.",
               problem:
                 "Hoy en día los jóvenes no tienen un hábito por la lectura que les añada valores y principios de vida ni desarrollar un sentido crítico y coherente a la hora de encaminar su propósito de vida!",
-              place:
-                "Colegios del País (Colombia)",
+              place: "Colegios del País (Colombia)",
               book: "Celda 212",
               other: {
                 title: "Un foro con el autor",
-                content: "Una vez que un grupo de estudiantes ha leído la obra, podrá tener la oportunidad de conocer al autor del libro y compartir una sesión de preguntas y respuestas que enriquecerá en gran manera su formación académica."
-              }
+                content:
+                  "Una vez que un grupo de estudiantes ha leído la obra, podrá tener la oportunidad de conocer al autor del libro y compartir una sesión de preguntas y respuestas que enriquecerá en gran manera su formación académica.",
+              },
             }}
           />
         </section>
-        <section className="p-12 bg-gradient-yellow rounded-[2rem] text-center" id="vincularme">
-          <h2 className="font-serif font-bold text-2xl lg:text-5xl pb-16 w-4/5 mx-auto">¿Cómo puedes vincularte a nuestros proyectos?</h2>
+        <section
+          className="p-12 bg-gradient-yellow rounded-[2rem] text-center"
+          id="vincularme"
+        >
+          <h2 className="font-serif font-bold text-2xl lg:text-5xl pb-16 w-4/5 mx-auto">
+            ¿Cómo puedes vincularte a nuestros proyectos?
+          </h2>
           <ul className="flex flex-col gap-10 justify-center items-center">
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-volunteer.svg" alt="Voluntario" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Como voluntario y apoyar uno de nuestros proyectos bien sea desde el servicio o con tu profesión.</span>
+              <Image
+                src="/icons/icon-volunteer.svg"
+                alt="Voluntario"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Como voluntario y apoyar uno de nuestros proyectos bien sea
+                desde el servicio o con tu profesión.
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-gifts.svg" alt="Aportes en especie" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Aporte en especie (mercado, ropa, implementos de aseo, medicina)</span>
+              <Image
+                src="/icons/icon-gifts.svg"
+                alt="Aportes en especie"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Aporte en especie (mercado, ropa, implementos de aseo, medicina)
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-donation.svg" alt="Aporte en dinero" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Aporte en dinero como empresa o persona natural – según el proyecto que te llame la atención – te mostramos el presupuesto para el desarrollo del mismo.</span>
+              <Image
+                src="/icons/icon-donation.svg"
+                alt="Aporte en dinero"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Aporte en dinero como empresa o persona natural – según el
+                proyecto que te llame la atención – te mostramos el presupuesto
+                para el desarrollo del mismo.
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-sponsor.svg" alt="Apadrinando" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Apadrinando de manera mensual y con un aporte desde $55.000 uno de los proyectos SELAH.</span>
+              <Image
+                src="/icons/icon-sponsor.svg"
+                alt="Apadrinando"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Apadrinando de manera mensual y con un aporte desde $55.000 uno
+                de los proyectos SELAH.
+              </span>
             </li>
             <li className="flex flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-start items-center w-auto lg:w-4/5">
-              <Image src="/icons/icon-share.svg" alt="Conectarnos" width={80} height={80}/>
-              <span className="text-2xl text-center lg:text-left">Conectarnos con posibles padrinos o empresas que deseen ser parte de SELAH.</span>
+              <Image
+                src="/icons/icon-share.svg"
+                alt="Conectarnos"
+                width={80}
+                height={80}
+              />
+              <span className="text-2xl text-center lg:text-left">
+                Conectarnos con posibles padrinos o empresas que deseen ser
+                parte de SELAH.
+              </span>
             </li>
           </ul>
-          <p className="font-bold text-2xl py-8 w-auto lg:w-1/2 text-center mx-auto">Recuerda que podemos expedir un certificado de donación descontable para la declaración de renta.</p>
+          <p className="font-bold text-2xl py-8 w-auto lg:w-1/2 text-center mx-auto">
+            Recuerda que podemos expedir un certificado de donación descontable
+            para la declaración de renta.
+          </p>
         </section>
       </div>
     </main>
