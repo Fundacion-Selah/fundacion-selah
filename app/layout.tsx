@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning={true}>
       <body
         className={`${roboto.variable} ${source_serif.variable} bg-ghost-white flex flex-col items-center font-sans`}
       >
