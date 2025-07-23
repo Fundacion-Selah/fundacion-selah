@@ -1,4 +1,9 @@
-const ListItemDian = ({ href, title }) => {
+type ListItemDianProps = {
+  href: string;
+  title: string;
+};
+
+const ListItemDian = ({ href, title }: ListItemDianProps) => {
   return (
     <li>
       <a
