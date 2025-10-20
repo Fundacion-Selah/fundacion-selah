@@ -38,7 +38,7 @@ function Modal({ children, isOpen, closeModal }: ModalProps) {
       <div className="fixed rounded-[1rem] grid grid-cols-1 grid-rows-[80%_10.5rem] lg:grid-rows-[1fr_3.5rem] overflow-hidden bg-gradient-blue inset-y-6 lg:inset-y-12 inset-x-6 lg:inset-x-12 z-50 place-items-center">
         <div className="modal__content">{children}</div>
         <div className="modal__actions ">
-          <Button primary onClick={closeModal}>
+          <Button onClick={closeModal}>
             Cerrar
           </Button>
         </div>
