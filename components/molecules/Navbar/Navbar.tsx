@@ -53,11 +53,11 @@ function Navbar() {
         <Modal isOpen={showModal} closeModal={() => setShowModal(false)}>
           <div className=" text-ghost-white text-center max-w-xl">
             <h3 className="font-serif font-bold text-3xl mb-8">
-              Puedes hacer tus donaciones en la siguiente cuenta BBVA:
+              Puedes hacer tus donaciones en la siguiente cuenta Bancolombia:
             </h3>
             <p className="font-bold">Fundación Selah</p>
             <p><span className="font-bold">Nit: </span>901692224</p>
-            <p><span className="font-bold">Cuenta de ahorros: </span>0241000358</p>
+            <p><span className="font-bold">Cuenta de ahorros: </span>99100002957</p>
             <h3 className="font-serif font-bold text-2xl my-8">
               o también puedes hacerlo por medio de PayPal:
             </h3>
