@@ -1,34 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fundación Selah
 
-## Getting Started
+Sitio web de la Fundación Selah, una organización sin ánimo de lucro dedicada a apoyar comunidades vulnerables en Medellín, Colombia, a través de proyectos de alimentación, formación creativa, desarrollo espiritual y fomento de la lectura.
 
-First, run the development server:
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) 16 (App Router, Turbopack)
+- **UI:** [React](https://react.dev/) 19
+- **Estilos:** [Tailwind CSS](https://tailwindcss.com/) 3
+- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/) 5
+- **Optimización de imágenes:** [Sharp](https://sharp.pixelplumbing.com/)
+- **Linting:** [ESLint](https://eslint.org/) 10
+
+## Requisitos previos
+
+- Node.js LTS (ver `.nvmrc`)
+- npm
+
+## Instalación
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Clonar el repositorio
+git clone git@github.com:Fundacion-Selah/fundacion-selah.git
+cd fundacion-selah
+
+# Usar la versión de Node correcta
+nvm use
+
+# Instalar dependencias
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts disponibles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Comando         | Descripción                              |
+|-----------------|------------------------------------------|
+| `npm run dev`   | Inicia el servidor de desarrollo (Turbopack) |
+| `npm run build` | Genera el build de producción            |
+| `npm run start` | Inicia el servidor de producción         |
+| `npm run lint`  | Ejecuta ESLint                           |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Estructura del proyecto
 
-## Learn More
+```
+app/
+├── fonts/              # Configuración de fuentes
+├── reportes-dian/      # Página de reportes DIAN
+├── globals.css         # Estilos globales
+├── layout.tsx          # Layout principal
+└── page.tsx            # Página de inicio
 
-To learn more about Next.js, take a look at the following resources:
+components/
+├── atoms/              # Componentes base (Button, ListItemDian)
+├── molecules/          # Componentes compuestos (Hero, Navbar, Modal, ProjectItem, etc.)
+└── organisms/          # Componentes de estructura (Header, Footer)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+public/
+├── hero/               # Imágenes del banner principal
+├── icons/              # Íconos SVG
+└── ...                 # Otros recursos estáticos
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+El proyecto sigue la metodología de diseño atómico (Atomic Design) para organizar los componentes.
 
-## Deploy on Vercel
+## Despliegue
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+El sitio se despliega en [Vercel](https://vercel.com). Cada push a `main` ejecuta un despliegue automático.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Para desplegar manualmente:
+
+```bash
+npm run build
+npm run start
+```
+
+## Contribuir
+
+1. Crea una rama desde `main`:
+   ```bash
+   git checkout -b feature/mi-feature
+   ```
+2. Realiza tus cambios y verifica que el build pase:
+   ```bash
+   npm run build
+   npm run lint
+   ```
+3. Haz commit y push de tu rama.
+4. Abre un Pull Request describiendo los cambios.
+
+## Licencia
+
+Proyecto privado de la Fundación Selah. Todos los derechos reservados.
