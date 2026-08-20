@@ -22,6 +22,7 @@ function ProjectItem({ image, title, description, odd, id }: ProjectItemProps) {
         width={694}
         height={438}
         className="project__image"
+        style={{ height: "auto" }}
       />
       <div className="project__info">
         <h3 className="font-serif font-bold text-3xl pb-2">{title}</h3>

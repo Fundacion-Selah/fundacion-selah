@@ -37,9 +37,7 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 .hero,
 .internalBanner {
