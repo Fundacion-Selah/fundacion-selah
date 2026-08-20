@@ -1,4 +1,34 @@
 export const DIAN_DOCUMENTS = {
+  2025: [
+    {
+      title: "Informe de Gestión",
+      href: "/reportesDian/2025/01-informe-de-gestion-2025-selah.pdf",
+    },
+    {
+      title: "Estados Financieros - 2025",
+      href: "/reportesDian/2025/02-estados-financieros-selah-2025.pdf",
+    },
+    {
+      title: "Notas Estados Financieros",
+      href: "/reportesDian/2025/03-notas-a-los-estados-financieros-fundacion-selah-2025.pdf",
+    },
+    {
+      title: "Dictamen Estados Financieros",
+      href: "/reportesDian/2025/04-dictamen-estados-financieros-fundacion-selah-2025.pdf",
+    },
+    {
+      title: "Certificado Estados Financieros",
+      href: "/reportesDian/2025/05-certificado-de-estados-financieros-fundacion-selah-2025.pdf",
+    },
+    {
+      title: "Acta de Asamblea No. 4",
+      href: "/reportesDian/2025/06-acta-no-4-cambio-de-revisor-fiscal.pdf",
+    },
+    {
+      title: "Acta de Asamblea No. 5",
+      href: "/reportesDian/2025/07-acta-no-5-aprobacion-estados-financieros-presupuesto-2026.pdf",
+    },
+  ],
   2024: [
     {
       title: "Informe de Gestión",
@@ -65,7 +95,6 @@ export const DIAN_DOCUMENTS = {
     {
       title: "Radicado Solicitud",
       href: "/reportesDian/2023/selah-2023-radicado-solicitud.pdf",
-    }
-  ]
-}
-
+    },
+  ],
+};
